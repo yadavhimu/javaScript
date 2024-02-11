@@ -12,21 +12,30 @@
     </ul>
 </body>
 <script>
-    function addLanguage(langName){
-        const li = document.createElement('li');
-        li.innerHTML = `${langName}`
-        document.querySelector('.language').appendChild(li)
-    }
-    addLanguage("python")
-    addLanguage("typescript")
-    addLanguage("java")
+    // function addLanguage(langName){
+    //     const li = document.createElement('li');
+    //     li.innerHTML = `${langName}`
+    //     document.querySelector('.language').appendChild(li)
+    // }
+    // addLanguage("python")
+    // addLanguage("typescript")
+    // addLanguage("java")
 
-    function addOptiLanguage(langName){
-        const li = document.createElement('li');
-        li.appendChild(document.createTextNode(langName))
-        document.querySelector('.language').appendChild(li)
-    }
+    // function addOptiLanguage(langName){
+    //     const li = document.createElement('li');
+    //     li.appendChild(document.createTextNode(langName))
+    //     document.querySelector('.language').appendChild(li)
+    // }
     // addOptiLanguage('golang')
+
+    function Addlan (langnName){
+      const li = document.createElement('li');
+      li.appendChild(document.createTextNode(langnName));
+      document.querySelector('.language').appendChild(li);
+    }
+
+     Addlan("Css")
+     Addlan("Java")
 
     //Edit
     const secondLang = document.querySelector("li:nth-child(2)")
@@ -34,19 +43,19 @@
     //secondLang.innerHTML = "Mojo"
     const newli = document.createElement('li')
     newli.textContent = "Mojo"
-    secondLang.replaceWith(newli)
+    // secondLang.replaceWith(newli)
 
     //edit
-    const firstLang = document.querySelector("li:first-child")
-    firstLang.outerHTML = '<li>TypeScript</li>'
+    // const firstLang = document.querySelector("li:first-child")
+    // firstLang.outerHTML = '<li>TypeScript</li>'
 
-    const middleLang = document.querySelector("li:nth-child()")
+    const middleLang = document.querySelector("li:first-child")
     middleLang.outerHTML = "<li>python</li>"
 
     //remove
-    const lastLang = document.querySelector('li:last-child')
-    lastLang.remove()
+    // const lastLang = document.querySelector('li:nth-child()')
+    // lastLang.remove()
 
-
+    
 </script>
 </html>
