@@ -7,6 +7,7 @@
 
 ## project 1
 
+
 ```javascript
 console.log("hitesh")
 const buttons = document.querySelectorAll('.button');
