@@ -7,7 +7,6 @@
 
 ## project 1
 
-
 ```javascript
 console.log("hitesh")
 const buttons = document.querySelectorAll('.button');
@@ -36,7 +35,6 @@ buttons.forEach(function (button) {
 
 
 ```
-
 ## project 2 solution
 
 ```javascript
