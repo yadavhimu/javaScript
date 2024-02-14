@@ -152,6 +152,7 @@ function displayMessage(message) {
   lowOrHi.innerHTML = `<h2>${message}</h2>`;
 }
 
+
 function endGame() {
   userInput.value = '';
   userInput.setAttribute('disabled', '');
@@ -233,6 +234,7 @@ const startChangingColor = function () {
     document.body.style.backgroundColor = randomColor();
   }
 };
+
 const stopChangingColor = function () {
   clearInterval(intervalId);
   intervalId = null;
