@@ -11,7 +11,6 @@ promiseOne.then(function(){
     console.log("Promise consumed");
 })
 
-
 new Promise(function(resolve, reject){
     setTimeout(function(){
         console.log("Async task 2");
@@ -49,7 +48,7 @@ const promiseFour = new Promise(function(resolve, reject){
     return user.username
 }).then((username) => {
     console.log(username);
-}).catch(function(error){
+}).catch((error) => {
     console.log(error);
 }).finally(() => console.log("The promise is either resolved or rejected"))
 
