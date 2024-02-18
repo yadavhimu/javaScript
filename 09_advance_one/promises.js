@@ -59,7 +59,7 @@ const promiseFive = new Promise(function(resolve, reject){
     setTimeout(function(){
         let error = true
         if (!error) {
-            resolve({username: "javascript", password: "123"})
+            resolve({username: "javascript", password: "1234"})
         } else {
             reject('ERROR: JS went wrong')
         }
