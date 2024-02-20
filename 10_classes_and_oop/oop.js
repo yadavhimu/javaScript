@@ -18,6 +18,7 @@ const user = {
 // console.log(this);
 
 
+
 function User(username, loginCount, isLoggedIn){
     this.username = username;
     this.loginCount = loginCount;
