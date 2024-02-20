@@ -30,7 +30,7 @@ function User(username, loginCount, isLoggedIn){
     return this
 }
 
-const userOne = new User("hitesh", 13, true)
+const userOne = new User("hitesh", 43, true)
 const userTwo = new User("ChaiAurCode", 11, false)
 console.log(userOne.constructor);
 //console.log(userTwo);
