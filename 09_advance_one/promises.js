@@ -66,6 +66,7 @@ const promiseFive = new Promise(function(resolve, reject){
     }, 1000)
 });
 
+
 async function consumePromiseFive(){
     try {
         const response = await promiseFive
