@@ -74,5 +74,15 @@
         document.getElementById('blue').onclick = clickHandler("blue")
         document.getElementById('red').onclick = clickHandler("Red")
 
+        const yadav = {
+            name:"Himanshu Yadav",
+            sayName:function () {
+                console.log(this.name);
+            }
+        };
+          const newFun = yadav.sayName.bind(yadav);
+        setTimeout(newFun,3 * 1000);
+
+        newFun();
     </script>
 </html>
