@@ -60,6 +60,17 @@
         delete(obj.height);
         console.log(obj.height)
 
+
+        function logA(){console.log('A')}
+        function logB(){console.log('B')}
+        function logC(){console.log('C')}
+        function logD(){console.log('D')}
+        logA();
+        setTimeout(logB,0);//after promise , setTimeout will run
+        Promise.resolve().then(logC); //promise have high priority so it come first
+        logD();
+
+        //output = A ,D,C,B
         </script>
 
 </html>
