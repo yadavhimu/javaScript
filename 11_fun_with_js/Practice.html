@@ -18,8 +18,7 @@
         #heading{
             background-color: aqua;
             width:fit-content;
-            height: fit-content;
-            position: absolute;
+            margin-left: 40%;
             left:30%;
         }
         h1{
@@ -67,7 +66,7 @@
         function logD(){console.log('D')}
         logA();
         setTimeout(logB,0);//after promise , setTimeout will run
-        Promise.resolve().then(logC); //promise have high priority so it come first
+        Promise.resolve().then(logC); //promise have high priority queue so it come first
         logD();
 
         //output = A ,D,C,B
