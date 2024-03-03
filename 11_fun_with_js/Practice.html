@@ -74,9 +74,11 @@
         let arr = ["hello" ,"aap","me","apple","guava","harsh","yadav"];
 
         let ans = arr.map(function(val){
-            if(val.length === 5)
+            if(val.length === 5){
                 return `<p>${val}</p>`;
-            else return`<span>${val}</span>`;
+            }else {
+                return`<span>${val}</span>`;
+            }
         })
          console.log(ans);
         </script>
