@@ -55,21 +55,30 @@
         });
 
         
-        console.log(obj.height);
-        delete(obj.height);
-        console.log(obj.height)
+        // console.log(obj.height);
+        // delete(obj.height);
+        // console.log(obj.height)
 
 
         function logA(){console.log('A')}
         function logB(){console.log('B')}
         function logC(){console.log('C')}
         function logD(){console.log('D')}
-        logA();
+        // logA();
         setTimeout(logB,0);//after promise , setTimeout will run
         Promise.resolve().then(logC); //promise have high priority queue so it come first
-        logD();
+        // logD();
 
         //output = A ,D,C,B
+
+        let arr = ["hello" ,"aap","me","apple","guava","harsh","yadav"];
+
+        let ans = arr.map(function(val){
+            if(val.length === 5)
+                return `<p>${val}</p>`;
+            else return`<span>${val}</span>`;
+        })
+         console.log(ans);
         </script>
 
 </html>
